@@ -1,0 +1,120 @@
+
+{
+  "menu": [
+    {
+      "url": "/dashboard",
+      "name": "Tableau de bord",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard-analytics",
+      "permissions": ["professeur", "personnel","étudiant"],
+      "TypeListe":""
+    },
+    {
+      "menuHeader": "Livres"
+    },
+    {
+      "name": "Paramétrage",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "",
+      "permissions": ["professeur", "personnel"],
+      "TypeListe":"",
+      "submenu": [
+        {
+          "url": "/gestion/gestion-listeCategories",
+          "name": "Catégories",
+          "slug": "",
+          "permissions": ["professeur", "personnel"],
+          "TypeListe":"Categories"
+        },
+        {
+          "url": "/gestion/gestion-listeEmplacements",
+          "name": "Emplacements",
+          "slug": "",
+          "permissions": ["professeur", "personnel"],
+          "TypeListe":"Emplacements"
+        },
+        {
+          "url": "/gestion/gestion-listeAuteurs",
+          "name": "Auteurs",
+          "slug": "",
+          "permissions": ["professeur", "personnel"],
+          "TypeListe":"Auteurs"
+        }
+      ]
+    },
+
+    
+    {
+      "name": "Livres",
+      "icon": "menu-icon tf-icons bx bx-lock-open-alt",
+      "slug": "",
+      "permissions": ["professeur", "personnel","étudiant"],
+      "TypeListe":"",
+      "submenu": [
+        {
+          "url": "/gestion/gestion-listeLivres",
+          "name": "Liste des livres",
+          "slug": "",
+          "target": "",
+          "permissions": ["professeur", "personnel"],
+          "TypeListe":"Livres"
+        },
+        {
+          "url": "/gestion-listeLivres/cartes",
+          "name": "Liste des livres Carte",
+          "slug": "",
+          "target": "",
+          "permissions": ["professeur", "personnel","étudiant"],
+          "TypeListe":"Livres"
+        }
+
+      ]
+    },
+
+    {
+      "menuHeader": "Compte utilisateur"
+    },
+    {
+      "name": "Paramètres",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "",
+      "permissions": ["professeur", "personnel","étudiant"],
+      "TypeListe":"",
+      "submenu": [
+        {
+          "url": "/gestion/gestion-paramCompte",
+          "name": "Compte",
+          "slug": "/gestion/gestion-paramCompte",
+          "permissions": ["professeur", "personnel","étudiant"],
+          "TypeListe":""
+        },
+        {
+          "url": "/gestion/gestion-listeUtilisateurs",
+          "name": "Liste des utilisateurs",
+          "slug": "/gestion/gestion-listeUtilisateurs",
+          "permissions": ["professeur", "personnel"],
+          "TypeListe":"Utilisateurs"
+        }
+      ]
+    },
+    {
+      "menuHeader": "Mes emprunts"
+    },
+    {
+      "name": "Emprunts",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "",
+      "permissions": ["professeur", "personnel","étudiant"],
+      "TypeListe":"",
+      "submenu": [
+        {
+          "url": "/gestion/gestion-listeLEmprunts",
+          "name": "Liste des emprunts",
+          "slug": "layouts-without-menu",
+          "permissions": ["professeur", "personnel","étudiant"],
+          "TypeListe":"Emprunts"
+        }
+      ]
+    }
+  ]
+}
